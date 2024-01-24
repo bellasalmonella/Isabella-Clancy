@@ -1,0 +1,18 @@
+div {
+    padding: 2em;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+  }
+  
+  body {
+    background-image: url("https://imgs.search.brave.com/yTmRW4HWsk5F_byj6_wvYoXY4nKYBZHhLlmbp7VgwNY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzYwMDAwMTYvYy8x/ODI1LzE4MjUvOTc0/LzYyL2lsLzg3MjVk/NS8zODA3Nzc1NDA2/L2lsXzYwMHg2MDAu/MzgwNzc3NTQwNl9j/NXU4LmpwZw");
+    background-repeat: repeat;
+  }
+
+  #blog {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    clear: both;
+}

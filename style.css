@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 18px;
+}
+
+.game-container {
+  position: relative;
+  width: 300px; 
+  height: 600px; 
+  border: 2px solid #000; 
+  overflow: hidden;
+}
+
+#blue-block {
+  position: absolute;
+  width: 75px;
+  height: 75px; 
+  background-color: #00f;
+}
+
+#red-block {
+  position: absolute;
+  background-color: red;
+  left: 75px;
+  width: 75px;
+  height: 250px;
+}
+
+#yellow-block1 {
+  position: absolute;
+  background-color: yellow;
+  left: 225px;
+  width: 75px;
+  height: 150px;
+}
+
+#yellow-block2 {
+  position: absolute;
+  background-color: yellow;
+  top: 90px;
+  left:150px;
+  width: 450px;
+  height: 75px;
+}
+
+#green-block1 {
+  position: absolute;
+  background-color: greenyellow;
+  left: 225px;
+  width: 75px;
+  height: 150px;
+}
+
+.item {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 15px 0;
+  transition: color 0.5s;
+  text-align: center;
+} 
+  .link:hover {
+    color: #00ff00; /* Green color on hover */
+  }
+
+  .item {
+    opacity: 0;
+    transform: translateY(-150px); 
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .linkfallanim {
+    opacity: 1;
+    transform: translateY(400px);
+    animation-name: moveDown;
+    animation-duration: 5.2s;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes moveDown {
+    from {
+      opacity: 1;
+      transform: translateY(-150px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(400px);
+    }
+  }

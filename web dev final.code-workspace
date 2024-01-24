@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "web dev final",
+			"path": "."
+		},
+		{
+			"name": "beller-portfolio - Copy",
+			"path": "../../beller-portfolio - Copy"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "web dev final"
+	}
+}
